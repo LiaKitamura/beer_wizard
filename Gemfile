@@ -19,6 +19,7 @@ gem 'coffee-rails', '~> 4.2'
 # shopify_api is compatible with Rails 5 but since the latest ActiveResource release (4.1) is locked on Rails 4.x, you'll need to use the unreleased master version:
 gem 'shopify_api'
 gem 'activeresource', github: 'rails/activeresource'
+gem 'figaro'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
