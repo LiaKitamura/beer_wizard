@@ -1,0 +1,15 @@
+I used figaro to install env variables. Figaro will create application.yml file for you when you run it. For info look up figaro gem.
+Need to have shopify key and password.
+
+shopify_key: your_key
+shopify_password: your_password
+
+
+
+Then add shopify file in initializers. It will have something like this:
+
+key = ENV["shopify_key"]
+password = ENV["shopify_password"]
+
+shop_url = "https://#{key}:#{password}@YOUR_COMPANY_HERE.myshopify.com/admin"
+ShopifyAPI::Base.site = shop_url
